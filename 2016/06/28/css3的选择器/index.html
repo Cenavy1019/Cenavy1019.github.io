@@ -37,19 +37,36 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.png?v=0.4.5.1" />
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="子元素选择器 and 后带选择器的区别？子元素选择器只是选中子元素，子元素之后的不会被选。 E &amp;gt; F
+后代选择器是选中所有的后代。 E F
+相邻兄弟选择器 and 通用兄弟选择器的区别相邻兄弟选择器只能选择下方的一个;       E + F
+通用兄弟选择器可以选择下方多个;         E ~ F
+都要遵循同一父级。
+属性选择器E[class]
+E[class=&amp;quot;haha&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/06/22/hello-world/index.html">
+<meta property="og:title" content="css3的选择器">
+<meta property="og:url" content="http://yoursite.com/2016/06/28/css3的选择器/index.html">
 <meta property="og:site_name" content="追逐梦想路">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-06-22T03:00:13.000Z">
+<meta property="og:description" content="子元素选择器 and 后带选择器的区别？子元素选择器只是选中子元素，子元素之后的不会被选。 E &amp;gt; F
+后代选择器是选中所有的后代。 E F
+相邻兄弟选择器 and 通用兄弟选择器的区别相邻兄弟选择器只能选择下方的一个;       E + F
+通用兄弟选择器可以选择下方多个;         E ~ F
+都要遵循同一父级。
+属性选择器E[class]
+E[class=&amp;quot;haha&amp;">
+<meta property="og:image" content="http://yoursite.com/images/选择器.jpg">
+<meta property="og:updated_time" content="2016-06-28T13:21:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="css3的选择器">
+<meta name="twitter:description" content="子元素选择器 and 后带选择器的区别？子元素选择器只是选中子元素，子元素之后的不会被选。 E &amp;gt; F
+后代选择器是选中所有的后代。 E F
+相邻兄弟选择器 and 通用兄弟选择器的区别相邻兄弟选择器只能选择下方的一个;       E + F
+通用兄弟选择器可以选择下方多个;         E ~ F
+都要遵循同一父级。
+属性选择器E[class]
+E[class=&amp;quot;haha&amp;">
+<meta name="twitter:image" content="http://yoursite.com/images/选择器.jpg">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -59,7 +76,7 @@ Quick">
   };
 </script>
 
-  <title> Hello World | 追逐梦想路 </title>
+  <title> css3的选择器 | 追逐梦想路 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -176,7 +193,7 @@ Quick">
           
           
             
-              Hello World
+              css3的选择器
             
           
         </h1>
@@ -185,8 +202,8 @@ Quick">
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2016-06-22T11:00:13+08:00" content="2016-06-22">
-            2016-06-22
+          <time itemprop="dateCreated" datetime="2016-06-28T19:11:12+08:00" content="2016-06-28">
+            2016-06-28
           </time>
         </span>
 
@@ -204,15 +221,52 @@ Quick">
       
 
       
-        <span itemprop="articleBody"><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <span itemprop="articleBody"><h3 id="子元素选择器-and-后带选择器的区别？"><a href="#子元素选择器-and-后带选择器的区别？" class="headerlink" title="子元素选择器 and 后带选择器的区别？"></a>子元素选择器 and 后带选择器的区别？</h3><pre><code>子元素选择器只是选中子元素，子元素之后的不会被选。 E &gt; F
+后代选择器是选中所有的后代。 E F
+</code></pre><h3 id="相邻兄弟选择器-and-通用兄弟选择器的区别"><a href="#相邻兄弟选择器-and-通用兄弟选择器的区别" class="headerlink" title="相邻兄弟选择器 and 通用兄弟选择器的区别"></a>相邻兄弟选择器 and 通用兄弟选择器的区别</h3><pre><code>相邻兄弟选择器只能选择下方的一个;       E + F
+通用兄弟选择器可以选择下方多个;         E ~ F
+都要遵循同一父级。
+</code></pre><h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><pre><code>E[class]
+E[class=&quot;haha&quot;]
+E[class~=&quot;haha&quot;]~:表示几个以空格隔开的属性值中包含了“haha”
+E[class^=&quot;haha&quot;]^:以haha开头的值
+E[class$=&quot;haha&quot;]$:以haha结尾的值
+E[class*=&quot;haha&quot;]*:包含了haha的值
+E[class|=&quot;haha&quot;]|:以haha或haha-开头的值
+E[class=&quot;haha&quot;]和E[class*=&quot;haha&quot;] 常用
+</code></pre><p><img src="images/选择器.jpg" alt="haha"></p>
+<h3 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h3><pre><code>：disabled  表单元素，默认废弃
+：enabled    表单元素，与disabled相反
+：checked  点击后的状态
+：focus  表单元素聚焦
+</code></pre><p><code>excuse：input[type=&quot;text&quot;]:disabled{
+border:1px red solid;background:blue;}</code></p>
+<h3 id="nth-选择器"><a href="#nth-选择器" class="headerlink" title="nth 选择器"></a>nth 选择器</h3><pre><code>:first-child 选择某个元素的第一个子元素
+:last-child 选择某个元素的最后一个子元素
+：nth-last-child()选择某个元素的一个或多个特定的子元素。从这个元素的最后一个子元素开始算。
+:nth-of-type（）选择指定的元素
+:nth-last-of-type()选择指定的元素，从元素的最后一个开始计算。
+:first-of-type选择一个上级元素下的第一个同类子元素。
+:last-of-type 选择一个上级元素的最后一个同类子元素。
+:only-child 选择的元素是它的父元素的唯一一个子元素。
+:only-of-type 选择一个元素是它的上级元素的唯一一个相同类型的子元素。
+:empty选择的元素里面没有任何内容
+----------------------------------------------------
+:nth-child()选择某个元素的一个或多个特定的子元素；
+:nth-child(length); 参数为具体数字‘
+:nth-child(n); 参数是n，n≥1；
+:nth-child(2n);n的倍数选择，n≥1；
+:nth-child(n+length); 选择大于length后面的元素；
+:nth-child(-n+length);选择小于length前面的元素；
+:nth-child(2n+1);表示隔几选一，odd even；
+</code></pre><h3 id="否定选择器（：not）"><a href="#否定选择器（：not）" class="headerlink" title="否定选择器（：not）"></a>否定选择器（：not）</h3><pre><code>input:not([type=&quot;submit&quot;]){border:1px red soild;
+</code></pre><h3 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h3><pre><code>::first-letter 选择首字母/字
+::first-line 选择第一行
+::before, ::after 给元素前面或后面插入内容，配合“content”
+使用，常用有清除浮动和icon。
+::selection 改变网页文本效果，只有背景和字体属性。
+</code></pre><hr>
+<p><code>COPYRIGHT ©2016 Cenavy. ALL RIGHTS RESERVED.</code></p>
 </span>
       
     </div>
@@ -224,11 +278,11 @@ Quick">
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/06/22/博客搭建/" rel="prev">博客搭建</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/06/27/h5新增语义标签/" rel="next">h5新增语义标签</a>
             
           </div>
         </div>
@@ -344,7 +398,7 @@ Quick">
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#子元素选择器-and-后带选择器的区别？"><span class="nav-number">1.</span> <span class="nav-text">子元素选择器 and 后带选择器的区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相邻兄弟选择器-and-通用兄弟选择器的区别"><span class="nav-number">2.</span> <span class="nav-text">相邻兄弟选择器 and 通用兄弟选择器的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性选择器"><span class="nav-number">3.</span> <span class="nav-text">属性选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伪类选择器"><span class="nav-number">4.</span> <span class="nav-text">伪类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nth-选择器"><span class="nav-number">5.</span> <span class="nav-text">nth 选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#否定选择器（：not）"><span class="nav-number">6.</span> <span class="nav-text">否定选择器（：not）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伪元素"><span class="nav-number">7.</span> <span class="nav-text">伪元素</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
